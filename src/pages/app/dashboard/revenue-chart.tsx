@@ -3,7 +3,7 @@ import {
   Line,
   LineChart,
   ResponsiveContainer,
-  Tooltip,
+  /* Tooltip, not used yet, but comming */
   XAxis,
   YAxis,
 } from 'recharts'
@@ -54,6 +54,7 @@ export function RevenueChart() {
                 })
               }
             />
+            <CartesianGrid vertical={false} className="stroke-muted" />
             <Line
               stroke={colors.violet[500]}
               type="linear"
