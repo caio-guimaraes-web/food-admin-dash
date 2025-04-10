@@ -74,7 +74,7 @@ export function OrderDetails({ orderId, open }: OrderDetailsProps) {
                   Realizado há
                 </TableCell>
                 <TableCell className="flex justify-end">
-                  {formatDistanceToNow(order.createdAt, {
+                  {formatDistanceToNow(parseISO(order.createdAt), {
                     locale: ptBR,
                     addSuffix: true,
                   })}
